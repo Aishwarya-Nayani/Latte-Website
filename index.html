@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latte</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img class="logo-image" src="Images/logo.png"/>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact" class="btn-nav">Visit Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="home" class="hero">
+        <div class="hero-container"></div>
+        <div class="hero-content">
+            <h1>Life Begins After Coffee.</h1>
+            <p>Experience the finest artisan beans, roasted locally and brewed with passion.</p>
+            <a href="#menu" class="btn-primary">View Our Menu</a>
+        </div>
+    </section>
+
+
+    <section id="menu" class="menu-section">
+        <div class="bg-container">
+            <h2 class="section-title">Our Favorites</h2>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <img src="images/filter_coffee.jpg" alt="Filter Coffee" class="card-image-real">
+                    <h3>Filter Coffee</h3>
+                    <p>Filter coffee is a strong, aromatic coffee brewed using a traditional filter and mixed with milk.</p>
+                    <span class="price">Rs 50</span>
+                </div>
+                <div class="menu-card">
+                    <img src="images/tea.jpg" alt="Tea" class="card-image-real">
+                    <h3>Tea</h3>
+                    <p>Tea is a refreshing drink made by brewing tea leaves in hot water, often with milk and sugar.</p>
+                    <span class="price">Rs 30</span>
+                </div>
+                <div class="menu-card">
+                    <img src="images/latte.jpg" alt="Classic Latte" class="card-image-real">
+                    <h3>Classic Latte</h3>
+                    <p>Espresso with steamed milk and a light layer of foam.</p>
+                    <span class="price">Rs 200</span>
+                </div>
+                <div class="menu-card">
+                    <img src="images/caramel_macchiato.jpg" alt="Caramel Macchiato" class="card-image-real">
+                    <h3>Caramel Macchiato</h3>
+                    <p>Vanilla syrup, steamed milk, espresso, and caramel drizzle.</p>
+                    <span class="price">Rs 250</span>
+                </div>
+                <div class="menu-card">
+                    <img src="images/cold_brew.jpg" alt="Cold Brew" class="card-image-real">
+                    <h3>Cold Brew</h3>
+                    <p>Steeped for 20 hours for a smooth, rich flavor.</p>
+                    <span class="price">Rs 150</span>
+                </div>
+                <div class="menu-card">
+                    <img src="images/black_coffee.jpg" alt="Black Coffee" class="card-image-real">
+                    <h3>Black Coffee</h3>
+                    <p>Black coffee is a bold, strong beverage made by brewing coffee without milk or sugar.</p>
+                    <span class="price">Rs 70</span>
+                </div>
+                <div class="menu-card">
+                    <img src="images/espresso.jpg" alt="Espresso" class="card-image-real">
+                    <h3>Espresso</h3>
+                    <p>Espresso is a concentrated coffee made by forcing hot water through finely ground coffee beans.</p>
+                    <span class="price">Rs 90</span>
+                </div>
+                <div class="menu-card">
+                    <img src="images/green_tea.jpg" alt="Green Tea" class="card-image-real">
+                    <h3>Green Tea</h3>
+                    <p>Green tea is a light, healthy drink made by brewing unoxidized tea leaves in hot water.</p>
+                    <span class="price">Rs 80</span>
+                </div><div class="menu-card">
+                    <img src="images/badam_tea.jpg" alt="Badam Tea" class="card-image-real">
+                    <h3>Badam Tea</h3>
+                    <p>Badam tea is a creamy, aromatic drink made with milk, almonds, and spices.</p>
+                    <span class="price">Rs 60</span>
+                </div>
+                
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="about-section">
+        <div class="container about-flex">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>We started Latte with a simple mission: to serve coffee that brings people together. Located in the heart of the city, we provide a warm atmosphere for work, chat, and relaxation.</p>
+            </div>
+            <div class="about-image">
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Visit Us</h2>
+            <div class="contact-wrapper">
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name!!" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email!!" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Tell us about your favorite coffee..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer;">Send Message</button>
+                </form>
+
+                <div class="contact-info">
+                    <h3>N Aishwarya</h3>
+                    <p>123 Latte Avenue<br>Tech City, TC 90210</p>
+                    <p><strong>Open:</strong> Mon-Sun, 7am - 9pm</p>
+                    <p><strong>Email:</strong> hello@latte.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Latte. Designed by N. Aishwarya.</p>
+    </footer>
+
+</body>
+</html>
