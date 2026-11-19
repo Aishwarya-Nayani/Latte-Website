@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#251a16">
+    <meta name="description" content="Discover locally roasted coffee, comforting tea, and a warm welcome at Latte.">
+    <title>Latte — Coffee, made personal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="#home" class="logo" aria-label="Latte home">
+                <span>latte<span class="logo-period">.</span></span>
+            </a>
+            <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="primary-navigation" class="site-nav" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Our menu</a></li>
+                    <li><a href="#about">Our story</a></li>
+                    <li><a href="#contact" class="btn-nav">Visit us <span aria-hidden="true">↗</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content container">
+                <span class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span> Your neighborhood coffee house</span>
+                <h1>Life begins<br>after <em>coffee.</em></h1>
+                <p>Good coffee, good company, and a little moment just for you.</p>
+                <a href="#menu" class="btn-primary">Explore the menu <span aria-hidden="true">→</span></a>
+            </div>
+            <a class="scroll-cue" href="#menu"><span></span> Scroll to discover</a>
+        </section>
+
+        <section id="menu" class="menu-section section-pad">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">Made fresh, every day</span>
+                        <h2 class="section-title">A few of our <em>favorites.</em></h2>
+                    </div>
+                    <p>From the first comforting sip to your afternoon pick-me-up, there’s something waiting for you.</p>
+                </div>
+                <div class="menu-tools">
+                    <div class="filter-list" role="group" aria-label="Filter menu by type">
+                        <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All drinks</button>
+                        <button class="filter-button" type="button" data-filter="coffee" aria-pressed="false">Coffee</button>
+                        <button class="filter-button" type="button" data-filter="tea" aria-pressed="false">Tea</button>
+                    </div>
+                    <label class="search-box">
+                        <span class="sr-only">Search the menu</span>
+                        <span class="search-icon" aria-hidden="true">⌕</span>
+                        <input id="menu-search" type="search" placeholder="Find your favorite..." autocomplete="off">
+                    </label>
+                </div>
+                <p class="menu-count" aria-live="polite"></p>
+                <div class="menu-grid">
+                    <article class="menu-card" data-category="coffee">
+                        <div class="card-image-wrap"><img src="Images/filter_coffee.jpg" alt="Traditional South Indian filter coffee" class="card-image-real" loading="lazy"><span class="card-tag">House favorite</span></div>
+                        <div class="card-copy"><div class="card-title-row"><h3>Filter Coffee</h3><span class="price">₹50</span></div><p>Strong, aromatic coffee brewed the traditional way and softened with milk.</p></div>
+                    </article>
+                    <article class="menu-card" data-category="tea">
+                        <div class="card-image-wrap"><img src="Images/tea.jpg" alt="A freshly brewed cup of tea" class="card-image-real" loading="lazy"></div>
+                        <div class="card-copy"><div class="card-title-row"><h3>Classic Tea</h3><span class="price">₹30</span></div><p>Freshly steeped tea with just the right touch of milk and sweetness.</p></div>
+                    </article>
+                    <article class="menu-card" data-category="coffee">
+                        <div class="card-image-wrap"><img src="Images/latte.jpg" alt="Classic latte with steamed milk" class="card-image-real" loading="lazy"></div>
+                        <div class="card-copy"><div class="card-title-row"><h3>Classic Latte</h3><span class="price">₹200</span></div><p>Our espresso, steamed milk, and a soft, delicate layer of foam.</p></div>
+                    </article>
+                    <article class="menu-card" data-category="coffee">
+                        <div class="card-image-wrap"><img src="Images/caramel_macchiato.jpg" alt="Caramel macchiato topped with caramel drizzle" class="card-image-real" loading="lazy"></div>
+                        <div class="card-copy"><div class="card-title-row"><h3>Caramel Macchiato</h3><span class="price">₹250</span></div><p>Vanilla, steamed milk, espresso, and a generous caramel drizzle.</p></div>
+                    </article>
+                    <article class="menu-card" data-category="coffee">
+                        <div class="card-image-wrap"><img src="Images/cold_brew.jpg" alt="Chilled cold brew coffee" class="card-image-real" loading="lazy"></div>
+                        <div class="card-copy"><div class="card-title-row"><h3>Cold Brew</h3><span class="price">₹150</span></div><p>Steeped slowly for 20 hours for an exceptionally smooth finish.</p></div>
+                    </article>
+                    <article class="menu-card" data-category="coffee">
+                        <div class="card-image-wrap"><img src="Images/black_coffee.jpg" alt="Freshly brewed black coffee" class="card-image-real" loading="lazy"></div>
+                        <div class="card-copy"><div class="card-title-row"><h3>Black Coffee</h3><span class="price">₹70</span></div><p>Bold, beautifully simple coffee. Nothing added, nothing needed.</p></div>
+                    </article>
+                    <article class="menu-card" data-category="coffee">
+                        <div class="card-image-wrap"><img src="Images/espresso.jpg" alt="A shot of espresso" class="card-image-real" loading="lazy"></div>
+                        <div class="card-copy"><div class="card-title-row"><h3>Espresso</h3><span class="price">₹90</span></div><p>A rich, concentrated shot pulled from finely ground coffee beans.</p></div>
+                    </article>
+                    <article class="menu-card" data-category="tea">
+                        <div class="card-image-wrap"><img src="Images/green_tea.jpg" alt="A warm cup of green tea" class="card-image-real" loading="lazy"></div>
+                        <div class="card-copy"><div class="card-title-row"><h3>Green Tea</h3><span class="price">₹80</span></div><p>A light, soothing cup brewed from delicate green tea leaves.</p></div>
+                    </article>
+                    <article class="menu-card" data-category="tea">
+                        <div class="card-image-wrap"><img src="Images/badam_tea.jpg" alt="Creamy almond badam tea" class="card-image-real" loading="lazy"></div>
+                        <div class="card-copy"><div class="card-title-row"><h3>Badam Tea</h3><span class="price">₹60</span></div><p>Creamy, aromatic tea made with almonds and warming spices.</p></div>
+                    </article>
+                </div>
+                <p class="no-results" hidden>No drinks match that search. Try another name.</p>
+            </div>
+        </section>
+
+        <section id="about" class="about-section section-pad">
+            <div class="container about-flex">
+                <div class="about-image" role="img" aria-label="A latte being prepared in our café"></div>
+                <div class="about-text">
+                    <span class="eyebrow">A little about us</span>
+                    <h2>More than coffee.<br><em>A place to belong.</em></h2>
+                    <p>Latte began with a simple idea: the best coffee is the kind that brings people together. We source thoughtfully, brew with care, and make room for the conversations, quiet moments, and everyday rituals that matter.</p>
+                    <a href="#contact" class="text-link">Come say hello <span aria-hidden="true">→</span></a>
+                    <div class="about-note"><span class="note-mark">“</span><span>Locally roasted. Thoughtfully brewed. Always welcoming.</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section section-pad">
+            <div class="container">
+                <div class="section-heading contact-heading">
+                    <div><span class="eyebrow">We saved you a seat</span><h2 class="section-title">Come on <em>in.</em></h2></div>
+                    <p>Drop by for your usual, or tell us what’s on your mind. The kettle’s always on.</p>
+                </div>
+                <div class="contact-wrapper">
+                    <form class="contact-form">
+                        <h3>Send us a note</h3>
+                        <p class="form-intro">We’d love to hear from you.</p>
+                        <div class="form-group">
+                            <label for="name">Your name</label>
+                            <input type="text" id="name" name="name" placeholder="How should we address you?" autocomplete="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your favorite coffee..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send message <span aria-hidden="true">→</span></button>
+                        <p class="form-status" role="status" aria-live="polite"></p>
+                    </form>
+                    <aside class="contact-info">
+                        <span class="eyebrow">Find your way here</span>
+                        <h3>Your corner<br>of the city.</h3>
+                        <div class="info-item"><span class="info-label">Come find us</span><p>123 Latte Avenue<br>Tech City, TC 90210</p></div>
+                        <div class="info-item"><span class="info-label">When we're open</span><p>Every day<br>7:00 am – 9:00 pm</p></div>
+                        <div class="info-item"><span class="info-label">Say hello</span><a href="mailto:hello@latte.com">hello@latte.com</a></div>
+                        <span class="contact-decoration" aria-hidden="true">latte.</span>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a href="#home" class="footer-logo">latte<span>.</span></a>
+        <p>Made with care, one cup at a time.</p>
+        <p class="copyright">&copy; <span id="current-year">2026</span> Latte. Designed by N. Aishwarya.</p>
+    </footer>
+</body>
+</html>
